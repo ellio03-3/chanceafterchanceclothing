@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chanceafterchance</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;800;900&family=Pinyon+Script&family=Barlow+Condensed:wght@800&display=swap">
+<style>
+:root{--bg:#D9D9DC;--ink:#0A0A0A;--soft:#55555A;--gold:#D81F26;--wine:#A8141A;--card:#ECECEE;--line:#B5B5BA;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A0A0A;--ink:#EDEDED;--soft:#9A9AA0;--gold:#FF2A2F;--wine:#FF4A4F;--card:#151515;--line:#2A2A2A}}
+:root[data-theme="dark"]{--bg:#0A0A0A;--ink:#EDEDED;--soft:#9A9AA0;--gold:#FF2A2F;--wine:#FF4A4F;--card:#151515;--line:#2A2A2A}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter Tight','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:1.05rem;line-height:1.5;letter-spacing:0}
+h1,h2,h3,.disp{font-family:'Inter Tight','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:-.02em;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 5vw;background:#fff;color:#0A0A0A}
+header .disp{font-weight:800;font-size:1.1rem}
+nav a{margin-left:1.5rem;text-decoration:none;font-size:1rem}
+nav a:hover{text-decoration:underline}
+.hero{padding:4vh 5vw 10vh;position:relative;overflow:hidden;background:#fff;color:#0A0A0A}.hero .btn{background:#0A0A0A;color:#fff}.hero .btn:hover{background:var(--gold);color:#fff}
+.hero h1{font-family:'Pinyon Script','Snell Roundhand','Apple Chancery',cursive;font-weight:400;font-size:clamp(2.8rem,8.5vw,6.5rem);line-height:1.05;letter-spacing:.03em;text-transform:none}
+.hero-fig{margin:0;position:absolute;right:5vw;top:40%;transform:translateY(-50%);width:min(34vw,440px)}.hero-fig svg{width:100%;height:auto;display:block}.hero-fig text{font-family:'Pinyon Script','Snell Roundhand','Apple Chancery',cursive;fill:#fff;text-anchor:middle}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(1){opacity:1;color:#0A0A0A}
+.hero h1 span:nth-child(2){opacity:1;color:#8E8E94;padding-left:.6em}
+.hero h1 span:nth-child(3){opacity:1;color:#0A0A0A;padding-left:1.2em}
+.hero h1 span:nth-child(4){color:var(--gold);padding-left:1.8em;animation:rise 1.6s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(.25em)}to{opacity:1;transform:none}}
+.hero p{max-width:30rem;margin:2.5rem 0 1.5rem;font-family:'Barlow Condensed','Futura Condensed','Arial Narrow',Impact,sans-serif;font-style:normal;font-weight:800;text-transform:uppercase;font-size:1.9rem;line-height:1.05;letter-spacing:.01em}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:.9rem 1.6rem;text-decoration:none;font-family:inherit;font-weight:800;letter-spacing:-.02em;border:0;border-radius:0;font-size:1rem;cursor:pointer}
+.btn:hover{background:var(--wine);color:#fff}
+.verse{background:var(--ink);color:var(--bg);padding:12vh 5vw;text-align:center}
+.verse blockquote{margin:0 auto;max-width:44rem;font-weight:800;letter-spacing:-.02em;font-size:clamp(1.8rem,4.6vw,3rem);line-height:1.05}
+.verse cite{display:block;margin-top:1.5rem;font-size:1rem;font-style:normal;color:var(--gold)}
+section.pad{padding:10vh 5vw}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:4vw}
+.about h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1}
+.about p{margin:0 0 1.2em;max-width:36rem}.about h2,.shop h2,.join h2{font-weight:900}
+.about .tag{font-weight:800;letter-spacing:-.03em;color:var(--wine)}
+.shop h2{font-size:clamp(2rem,5vw,3.6rem);margin-bottom:2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.5rem}
+.item{display:flex;flex-direction:column}
+.pic{aspect-ratio:4/5;background:var(--card);border:1px solid var(--line);position:relative;display:grid;place-items:center}
+.pic svg{width:78%;height:auto}
+.pic b{position:absolute;font-weight:800;font-size:1.05rem;line-height:1;text-align:center;letter-spacing:-.02em;top:41%;width:34%}
+.item h3{font-size:1.25rem;margin-top:.8rem}
+.item small{display:block;color:var(--soft);font-size:1rem}
+.item .row{display:flex;justify-content:space-between;align-items:center;margin-top:.4rem}
+.add{font:inherit;font-size:.95rem;background:none;border:1px solid var(--ink);color:var(--ink);border-radius:0;padding:.25rem .9rem;cursor:pointer}
+.add:hover{background:var(--ink);color:var(--bg)}
+.join{background:var(--card);border-top:1px solid var(--line);text-align:center}
+.join h2{font-size:clamp(2rem,5vw,3.4rem)}
+.join p{max-width:32rem;margin:1rem auto 2rem}
+.join form{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+.join input{font:inherit;padding:.8rem 1.2rem;border-radius:0;border:1px solid var(--soft);background:var(--bg);color:var(--ink);min-width:min(100%,20rem)}
+#msg{margin-top:1rem;min-height:1.6em;color:var(--wine);font-weight:400}
+footer{padding:2.5rem 5vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;color:var(--soft);font-size:1rem}
+#cart{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));background:var(--gold);color:#fff;padding:.6rem 1.1rem;border-radius:0;font-weight:800;font-size:1rem}
+@media (max-width:900px){.hero-fig{position:static;transform:none;width:100%;max-width:340px;margin:2.5rem auto 0}}
+@media (max-width:760px){.about{grid-template-columns:1fr}nav a{margin-left:1rem}}
+@media (prefers-reduced-motion:reduce){.hero h1 span{animation:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tee" viewBox="0 0 200 200"><path d="M70 20 L10 50 L28 88 L50 78 L50 180 L150 180 L150 78 L172 88 L190 50 L130 20 Q100 44 70 20Z" fill="currentColor"/></symbol></svg>
+
+<header>
+  <span class="disp">Chanceafterchance</span>
+  <nav><a href="#shop">Shop</a><a href="#about">Our story</a><a href="#join">Join</a></nav>
+</header>
+
+<main>
+<div class="hero"><div class="hero-text">
+  <h1 aria-label="Chance after chance"><span>chance</span><span>after</span><span>chance</span><span>again.</span></h1>
+  <p>Every piece carries truth: grace does not run out. How will you respond?</p>
+  <a class="btn" href="#shop">Shop the first drop</a></div><figure class="hero-fig"><svg viewBox="0 0 300 300" role="img" aria-label="Red long sleeve t-shirt with the words chance after chance in white calligraphy"><path d="M110 28 L50 48 L12 200 L48 212 L72 112 L72 282 L228 282 L228 112 L252 212 L288 200 L250 48 L190 28 Q150 64 110 28Z" fill="#D81F26"/><path d="M72 112 L58 66 M228 112 L242 66" stroke="rgba(0,0,0,.25)" stroke-width="2" fill="none"/><path d="M110 28 Q150 64 190 28" stroke="#A8141A" stroke-width="7" fill="none"/><text x="150" y="150" font-size="21">chance after chance.</text></svg></figure>
+</div>
+
+<div class="verse">
+  <blockquote>His mercies never come to an end; they are new every morning.</blockquote>
+  <cite>Lamentations 3:22–23</cite>
+</div>
+
+<section class="pad about" id="about">
+  <h2>Built on God’s grace and mercy.</h2>
+  <div>
+    <p>Chanceafterchance started from a lyric in “God I’m Just Grateful for You.” That lyric inspired a faith-based clothing brand, made as a reminder of Jesus’ sacrifice, His mercy and grace. Not to be abused or taken advantage of, but to lead us on to the right path.</p>
+    <p>Each design is a reminder for a hard morning: you are forgiven, you are loved, and you get to begin again. Wear it on the days you feel strong, and on the days you do not.</p>
+    <p class="tag">Made to be worn and to start conversations.</p>
+  </div>
+</section>
+
+<section class="pad shop" id="shop">
+  <h2>The first drop</h2>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="pad join" id="join">
+  <h2>Be the first to know.</h2>
+  <p>New designs, restocks, and a short verse in your inbox now and then. No spam.</p>
+  <form id="f"><input type="email" id="em" placeholder="Your email" aria-label="Email address" required><button class="btn" type="submit">Join the list</button></form>
+  <div id="msg" role="status"></div>
+</section>
+</main>
+
+<footer><span>© 2026 Chanceafterchance</span><span>Built on grace. Printed to last.</span></footer>
+<div id="cart" aria-live="polite">Bag: 0</div>
+
+<script>
+var items=[
+ {n:"Seventy Times Seven Tee",p:48,t:"70×7",s:"Matthew 18:22",c:"#0A0A0A",f:"#F2F2F2"},
+ {n:"New Every Morning Hoodie",p:98,t:"New Every Morning",s:"Lamentations 3:23",c:"#D81F26",f:"#FFFFFF"},
+ {n:"Try Again Tee",p:48,t:"Try Again",s:"Proverbs 24:16",c:"#E8E8EA",f:"#D81F26"},
+ {n:"Grace Is Enough Crewneck",p:78,t:"Grace Is Enough",s:"2 Corinthians 12:9",c:"#8E8E94",f:"#0A0A0A"},
+ {n:"Still Standing Tee",p:48,t:"Still Standing",s:"Psalm 18:35",c:"#3A3A3E",f:"#FFFFFF"},
+ {n:"Begin Again Tee",p:48,t:"Begin Again",s:"Isaiah 43:19",c:"#0A0A0A",f:"#E01F26"}
+];
+var g=document.getElementById('grid'),n=0;
+items.forEach(function(i){
+ var d=document.createElement('div');d.className='item';
+ d.innerHTML='<div class="pic"><svg style="color:'+i.c+'" aria-hidden="true"><use href="#tee"/></svg><b style="color:'+i.f+'">'+i.t+'</b></div><h3>'+i.n+'</h3><small>'+i.s+'</small><div class="row"><span>S$'+i.p+'</span><button class="add">Add to bag</button></div>';
+ d.querySelector('button').onclick=function(){n++;document.getElementById('cart').textContent='Bag: '+n};
+ g.appendChild(d);
+});
+document.getElementById('f').onsubmit=function(e){e.preventDefault();
+ document.getElementById('msg').textContent='Thank you. You’re on the list.';e.target.reset()};
+</script>
+</body>
+</html>
